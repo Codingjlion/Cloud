@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import Map from './Map';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Row className="mt-4 mb-4">
+        <Col>
+          <h1>Welcome to my landing page</h1>
+          <p>Here you can find all the information you need</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Map />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
